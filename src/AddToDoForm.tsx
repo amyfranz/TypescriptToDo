@@ -1,4 +1,9 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+library.add(faArrowAltCircleRight);
+
 interface AddToDoFormProps {
   addTodo: AddTodo;
 }
@@ -22,7 +27,7 @@ export const AddToDoForm: React.FC<AddToDoFormProps> = ({ addTodo }) => {
         onChange={handleChange}
       />
       <button type="submit" onClick={handleSubmit}>
-        Add ToDo
+        <FontAwesomeIcon icon={faArrowAltCircleRight} />
       </button>
     </form>
   );

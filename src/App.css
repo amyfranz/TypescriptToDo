@@ -1,0 +1,39 @@
+.mainContent {
+  margin: -8px;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.todoListComponent {
+  background-color: white;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-size: 3rem;
+}
+input {
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: solid 0.1rem;
+  margin-bottom: 2rem;
+}
+label {
+  font-size: 1.5rem;
+}
+button {
+  font-size: 1.5rem;
+  background-color: unset;
+  border: none;
+}
